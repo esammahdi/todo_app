@@ -9,9 +9,17 @@ class LoginEvent extends HomeblocEvent {
   final String username;
   final String password;
 
-  LoginEvent(this.username, this.password);
+  const LoginEvent(this.username, this.password);
 
   @override
   List<Object?> get props => [username,password];
 
+}
+
+class RegisteringServicesEvent extends HomeblocEvent {
+
+  const RegisteringServicesEvent();
+
+  @override
+  List<Object?> get props => [];
 }
